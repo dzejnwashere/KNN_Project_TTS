@@ -11,7 +11,7 @@ now activate it
 
 ``pip install -r requirements_tts.txt``
 
-``pip install "nemo_toolkit[all]==1.23.0"``
+``pip install nemo_toolkit[all]``
 
 ## Test run
 Try to run our base test notebook in `test/Our-run-test.ipynb`
