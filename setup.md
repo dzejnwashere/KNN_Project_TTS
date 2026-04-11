@@ -2,7 +2,7 @@
 
 ## Create conda environment
 ``conda create --name nemo-tts python==3.10.12``
-
+``conda init``
 now activate it
 
 ``conda activate nemo-tts``
