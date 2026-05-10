@@ -119,7 +119,7 @@ class PitchLoss(Loss):
 
         return pitch_loss
 
-
+# Our implementation class
 class EnergyLoss(Loss):
     def __init__(self, loss_scale=0.1):
         super().__init__()
@@ -179,7 +179,7 @@ class EmotionLoss(Loss):
         emotion_loss *= self.loss_scale
 
         return emotion_loss
-
+#----------------------------------------------------------------------------------------------------------------------
 
 class MelLoss(Loss):
     @property

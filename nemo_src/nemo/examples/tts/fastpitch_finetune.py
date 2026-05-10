@@ -20,7 +20,7 @@ from nemo.core.config import hydra_runner
 from nemo.utils import logging
 from nemo.utils.exp_manager import exp_manager
 
-
+# We changed the config name from fastpitch_align_44100 to fastpitch_emotion_22050
 @hydra_runner(config_path="conf", config_name="fastpitch_emotion_22050")
 def main(cfg):
     if hasattr(cfg.model.optim, 'sched'):
@@ -29,6 +29,7 @@ def main(cfg):
         logging.warning("The recommended learning rate for finetuning is 2e-4")
     trainer = pl.Trainer(**cfg.trainer)
     exp_manager(trainer, cfg.get("exp_manager", None))
+    # we added this lines to match our configuration
     pretrained = FastPitchModel.restore_from(
         "/home/dzejn/PycharmProjects/KNN_Project_TTS/tts_en_fastpitch.nemo",
         map_location='cpu',

@@ -55,7 +55,7 @@ from nemo.utils import logging, model_utils
 
 
 
-# we have added emotion embedding and emotion to configs
+# we have added emotion loss and emotion to configs
 
 @dataclass
 class G2PConfig:

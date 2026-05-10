@@ -61,6 +61,7 @@ from nemo.core.neural_types.elements import (
 )
 from nemo.core.neural_types.neural_type import NeuralType
 
+# we have added emotion embeddings and emotion to configs
 
 def average_features(pitch, durs):
     durs_cums_ends = torch.cumsum(durs, dim=1).long()

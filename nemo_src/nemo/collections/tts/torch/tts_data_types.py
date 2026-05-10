@@ -50,6 +50,7 @@ class Pitch(TTSDataType, WithLens):
 class Energy(TTSDataType, WithLens):
     name = "energy"
 
+# We added this Emotion class
 class Emotion(TTSDataType, WithLens):
     name = "emotion"
 

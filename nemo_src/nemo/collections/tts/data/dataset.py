@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# we have added emotion embedding and emotions
+
 import json
 import math
 import os
