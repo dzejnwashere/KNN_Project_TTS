@@ -7,7 +7,7 @@ from nemo.utils.exp_manager import exp_manager
 from nemo.utils.app_state import AppState
 
 
-@hydra_runner(config_path="conf", config_name="fastpitch_emotion")
+@hydra_runner(config_path="../conf", config_name="fastpitch_emotion")
 def main(cfg):
     trainer = pl.Trainer(**cfg.trainer)
     exp_manager(trainer, cfg.get("exp_manager", None))
