@@ -1,5 +1,3 @@
-# save as: extract_emotion_from_filenames.py
-
 import torch
 import os
 import re

@@ -109,8 +109,8 @@ def main():
             writer.writerow([name, text])
 
     print(f"\nDone! Transcriptions saved to '{args.output}'.")
-    print(f"  • Files processed : {len(file_paths)}")
-    print(f"  • Output CSV      : {os.path.abspath(args.output)}")
+    print(f"Files processed : {len(file_paths)}")
+    print(f"Output CSV      : {os.path.abspath(args.output)}")
 
 
 if __name__ == "__main__":
