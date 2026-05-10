@@ -12,7 +12,7 @@ def write_json(new_entry, filepath='data.json'):
     with open(filepath, 'w') as f:
         json.dump(file_data, f, indent=4)
 
-data_dir = "../test"
+data_dir = "/home/alex/Documents/KNN/nfa-out/ctm/words"
 
 for filename in os.listdir(data_dir):
     if filename.endswith('.ctm'):

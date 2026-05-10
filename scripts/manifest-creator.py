@@ -1,11 +1,23 @@
 import json
+import argparse
+import os
+from collections import defaultdict
 
-fixed_path = "/home/alex/Documents/KNN/datasets/bea_Angry/"
-manifest_path = "/home/alex/Documents/KNN/KNN_Project_TTS/scripts/manifest-angry-test.json"
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import seaborn as sns
+from sklearn.metrics import (
+    accuracy_score, f1_score, confusion_matrix, classification_report
+)
+
+fixed_path = "/home/alex/Documents/KNN/all-datasets/"
+manifest_path = "/home/alex/Documents/KNN/KNN_Project_TTS/scripts/manifest-all.json"
 
 content = ""
 
-with open("test-files.txt", "r") as file_list:
+with open("files.txt", "r") as file_list:
     for line in file_list:
         line = line.strip()
         full_path = fixed_path + line
